@@ -4,8 +4,10 @@ $error = "username or password incorrect!";
 $loggedin ="true";
 $email = $_POST['email'];
 $password= $_POST['password'];
-$db = mysqli_connect("mariadb","cs431s22","ohnaes9M","cs431s22");
 
+//create connection
+$db = mysqli_connect("mariadb","cs431s22","ohnaes9M","cs431s22");
+//check connection
 if(mysqli_connect_errno()){
     
     echo "<Error: Could not connect to database.<br/>
@@ -14,9 +16,9 @@ if(mysqli_connect_errno()){
 }
 //If wanted to ec=ncrypt the password add lines below
 //$encryptpasswd = sha1($password);
-//$query = "SELECT * FROM user WHERE Email='".$email ." ' and Password = '".$encryptpasswd. "'";
 
-$query = "SELECT * FROM user WHERE Email='".$email ." ' ";
+$query = "SELECT * FROM user_q";
+
 $result = mysqli_query($db,$query);
 
 $row = mysqli_num_rows($result);
