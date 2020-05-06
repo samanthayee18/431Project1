@@ -70,7 +70,7 @@ session_start();
         }
         #headp{
             padding-bottom:10%;
-            font-size:24px;
+            font-size:40px;
         }
        
         #signin{
