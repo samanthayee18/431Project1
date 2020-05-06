@@ -13,8 +13,7 @@ $password = $_POST['password'];
 
 $zero = 0;
 
-@$db = new mysqli("mariadb","cs431s22","ohnaes9M","cs431s22");
-//$db = new mysqli("mariadb","cs431s22","ohnaes9M","cs431s22");
+$db = new mysqli("mariadb","cs431s22","ohnaes9M","cs431s22");
 
 if(mysqli_connect_errno()) {
 
@@ -23,7 +22,7 @@ if(mysqli_connect_errno()) {
     exit;
 }
 
-
+//trim takes out the whitespace
 if( trim($_POST['username']) == "" || trim($_POST['email']) == "" ||trim($_POST['password']) == "") {
     
  
@@ -51,10 +50,7 @@ else {
     $password = mysqli_real_escape_string($db, $password);
     //$encryptpasswd = sha1($password);
 
-
-    //$query = "SELECT Username,Email FROM user_q WHERE Email='".$email ." ' && Username = '".$username. "'";
-    //$query = "SELECT Username,Email FROM user_q";
-    $query = "SELECT Username FROM user_q WHERE Username = $username";
+    $query="INSERT INTO user_q (Username, Email) VALUES('$username','$email')";
     
     $result = mysqli_query($db,$query);
     if (!$result) {
