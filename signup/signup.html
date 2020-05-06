@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <html>
+        <head>
+            
+
+        </head>
+        <body>
+            <form action="signup.php" method="post" enctype="multipart/form-data" >
+            <div class="container">
+            <div class="jumbotron">
+             <h2> Register </h2>
+                    <div class="form-group ">
+                        <label for="username">Username</label>
+                        <input type="username" name ="username" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group ">
+                        <label for="email">Email Address </label>
+                        <input type="email" name="email" class="form-control" id="inputPassword4">
+                    </div>
+  
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="text" name="password" class="form-control" id="inputAddress">
+                </div>
+                
+                <!--
+                    //if we want to add 2nd verification
+                <div class="form-group">
+                    <label for="confirm">Confirm Password</label>
+                    <input type="text" name="confirm" class="form-control" id="inputAddress2">
+                </div>
+              -->
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+                </div>   
+            </div> 
+        </form>
+
+        </body>
+
+        <style>
+            h1{
+                text-align: center;
+                padding-top:20px;
+                padding-bottom: 50px;
+            }
+            h2{
+                padding-bottom: 20px;
+            }
+        </style>
+    </html>
