@@ -1,0 +1,74 @@
+body{
+  
+  overflow-x: hidden;
+}
+
+h1{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 4vw !important;
+  
+  font-weight: 100 !important;  
+  margin: 0 !important;
+}
+
+h3{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 3vw !important;
+  font-style: normal; font-variant: normal;
+  
+  margin: 0;
+}
+
+
+
+h2{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 3vw !important;
+  
+  font-weight: 700 !important;
+  
+}
+
+header{
+  display: block;
+  text-align: center;
+}
+
+.quote{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+}
+
+.author{
+
+}
+
+.navigation{
+
+
+}
+
+a{
+  display: inline-block;
+  padding: 1vw;
+  text-decoration: none;
+  color: black;
+
+}
+
+a.home{
+  text-decoration: none;
+}
+
+a.home:hover{
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+
+#whiteButton:hover {
+    background-color: red !important;
+}
